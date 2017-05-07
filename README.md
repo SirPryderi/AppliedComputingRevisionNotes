@@ -128,7 +128,7 @@ A list is an _Abstract Data Type_ that represents a countable collection of orde
 An Array List is a data structure that is meant to work like a standard _array_, i.e. offering indexed access, but with dynamic allocation, removing the limitation of the fixed size. It offers very good performances when reading and appending, but removing an element or inserting mid-way requires all the other elements to be shuffled.
  
 ### Linked Lists
-A linked list is an ordered data structure that has **no indexed access**, but every node has a reference to the next element. Reaching a given element in the linked linked requires to traverse the whole structure until that point, but removing and or adding an element is very quick, because only one pointer manipulation is required.
+A linked list is an ordered _Abstract Data Type_ that has **no indexed access**, but every node has a reference to the next element. A train basically, choo-choo!. The first element of the linked list is called _head_. The last element is called _tail_, and usually points to _null_ in most of the implementations. Reaching a given element in the linked linked requires to traverse the whole structure until that point, but removing and or adding an element is very quick, because only one pointer manipulation is required. They are generally less efficient than arrays on reading, but performs better if there are a lot of insertions and deletions.
 
 ![Linked List](https://upload.wikimedia.org/wikipedia/commons/3/37/Singly_linked_list.png)
 
