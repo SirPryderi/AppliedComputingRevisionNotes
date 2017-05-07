@@ -59,7 +59,7 @@ An aggregation represents the &quot;**has**&quot; relationship between two objec
 
 ## Composition
 
-A composition is a relationship representing an object being strictly part of another, that cannot exist separately. This is used to represent real-life relationships between things that cannot be separated, like an Engine being part of only a Plane.
+A composition is a relationship representing an object being strictly part of another, that cannot exist separately. This is used to represent real-life relationships between things that cannot be separated, like an Engine being part of only a Plane. What's the matter with all these aeronautical examples? Did you want to be a pilot or something? Make up your mind, seriously.
 
 
 ___
@@ -110,7 +110,7 @@ ___
 | char   | 2       | 16      |
 
 ### Boolean
-The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), but is able to pack an array of booleans to use `1 byte` per element. 
+The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), because CPU are optimised for working with integers, but is able to pack an array of booleans to use `1 byte` per element. Smart, innit?
 
 
 ___
@@ -134,17 +134,17 @@ A linked list is an ordered data structure that has **no indexed access**, but e
 
 
 ## Queues
-A queue is an ordered data structure where it is only possible to add an element at the bottom of the structure (_**enqueue**_) and remove one from the top (_**dequeue**_). This makes the Queue a _**First-In-First-Out**_ (_**FIFO**_). Often a _peek_ operation is added to check the element on top without removing it.
+A queue is an ordered data structure where it is only possible to add an element at the bottom of the structure (_**enqueue**_) and remove one from the top (_**dequeue**_). This makes the Queue a _**First-In-First-Out**_ (_**FIFO**_). Often a _peek_ operation is added to check the element on top without removing it. More or less like when you queue to get on a bus. Unless you live in Italy, in that case is more like a traversing a tree or something.
 
 ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
 
 ## Stacks
-A stack is an ordered data structure where it is only possible to add an element at the top of the structure (_**push**_) and removing one fro the top of the stack (_**pop**_). This makes the Stack a _**First-In-Last-Out**_ (_**FILO**_). Often a _peek_ operation is added to check the element on top without removing it.
+A stack is an ordered data structure where it is only possible to add an element at the top of the structure (_**push**_) and removing one fro the top of the stack (_**pop**_). This makes the Stack a _**First-In-Last-Out**_ (_**FILO**_). Often a _peek_ operation is added to check the element on top without removing it. Basically a stack of pancakes 🥞.
 
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
 ## Sets
-A set is an _Abstract Data Type_ that can store unique value without a particular order. They represents the mathematical concept of a set, and as such have the following mathematical operations:
+A set is an _Abstract Data Type_ that can store unique value without a particular order. More or less like a set of cars 🂱. They represents the mathematical concept of a set, and as such have the following mathematical operations:
 
 * **Union** - Joins two Sets.
 
