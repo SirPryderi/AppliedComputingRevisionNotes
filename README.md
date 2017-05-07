@@ -112,7 +112,8 @@ ___
 ### Boolean
 The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), because CPU are optimised for working with integers, but is able to pack an array of booleans to use `1 byte` per element. Smart, innit?
 
-
+## Wrapper Classes
+_coming soon..._
 ___
 # Abstract Data Structures
 ## Collections
@@ -154,3 +155,32 @@ A set is an _Abstract Data Type_ that can store unique value without a particula
 ![Intersection](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn0001.svg/330px-Venn0001.svg.png)
 * **Difference** - Returns the elements in B that are not in A.
 * **Subset** - A predicate that tests whether all the elements in A are in B.
+
+## Trees
+
+## Maps
+
+# Search
+
+# Sorting
+## Bubble Sort
+## Insertion Sort
+## Selection Sort
+## Merge Sort
+
+# Memory Allocation
+* Dynamic
+* Automatic
+* Static
+
+# Encoding
+* ASCII
+* UNICODE
+
+# Compression
+* Lossy vs Lossless
+* Image
+* Audio
+* Video
+
+# Lifecycle Models
