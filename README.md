@@ -77,3 +77,37 @@ Methods and attributes marked as _protected_ are visible only by **subclasses** 
 
 ## Public
 Methods and attributes marked as _public_ are **globally** visible. This access modifier should be used only for the **API** of your classes.
+
+
+___
+# Data Types
+
+## Primitive vs Compound types
+- **Primitive data types** are basic types that can be stored in a CPU register. _Integers_, _floats_ and _characters_ are examples of primitive data types.
+
+- **Compound** or **Composite** data types are data types that can be constructed using primitive types and other compound types. _Arrays_, _Struct_ and _Classes_ are examples of compound data types.
+
+
+## Primitive types (Java)
+
+### Integers
+| Type  | byte(s) |  bit(s) |
+|------:|:-------:|:-------:|
+| byte  | 1       | 8       |
+| short | 2       | 16      |
+| int   | 4       | 32      |
+| long  | 8       | 64      |
+
+### Floating Points
+| Type   | byte(s) |  bit(s) |
+|-------:|:-------:|:-------:|
+| float  | 4       | 32      |
+| double | 8       | 64      |
+
+### Characters
+| Type   | byte(s) |  bit(s) |
+|-------:|:-------:|:-------:|
+| char   | 2       | 16      |
+
+### Boolean
+The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), but is able to pack an array of booleans to use `1 byte` per element. 
