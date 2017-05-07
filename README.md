@@ -7,7 +7,7 @@ ___
 
 ## Class Diagram
 
-The class diagram shows the **relationships** between classes, the **attributes and methods**, and their **visibility** , of each class. The structure of the **packages** is introduced as well. That&#39;s part of **UML**, btw.
+The class diagram shows the **relationships** between classes, the **attributes and methods**, and their **visibility**, of each class. The structure of the **packages** is introduced as well. That&#39;s part of **UML**, btw.
 
 ## Use Case
 
@@ -64,10 +64,16 @@ A composition is a relationship representing an object being strictly part of an
 
 ___
 # Access Modifiers
-## Private
+Access modifiers let the developer chose the **scope** of **methods** and **attributes**.
 
-## Default / Packaged Private
+## Private
+Methods and attributes marked as _private_ can be seen **only** by implementations of the **same class**. It is useful to prevent uncontrolled access to class-specific methods and attributes. 
+
+## Default / Packaged-Private
+Methods and attributes that have no visibility modifiers explicitly declared, are treated as _package-private_, and they are visible only by classes in the **same package**. It can be used to share the access of methods and attributes only to a subsystem placed in a package.
 
 ## Protected
+Methods and attributes marked as _protected_ are visible only by **subclasses** and classes in the **same package**. Why they are visible for classes in the same package remains a mystery to mankind. 
 
 ## Public
+Methods and attributes marked as _public_ are **globally** visible. This access modifier should be used only for the **API** of your classes.
