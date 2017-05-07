@@ -37,7 +37,7 @@ ___
 
 The implementation/realisation of an interface by an object. The arrow points the interface.
 
-In case it is an external interface, the lollipop notation is used.
+In case it is an external interface, the lollipop 🍭 notation is used.
 
 ## Inheritance
 
