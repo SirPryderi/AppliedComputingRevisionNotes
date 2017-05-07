@@ -91,7 +91,7 @@ ___
 ## Primitive types (Java)
 
 ### Integers
-| Type  | byte(s) |  bit(s) |
+| Type  | bytes   |  bits   |
 |------:|:-------:|:-------:|
 | byte  | 1       | 8       |
 | short | 2       | 16      |
@@ -99,13 +99,13 @@ ___
 | long  | 8       | 64      |
 
 ### Floating Points
-| Type   | byte(s) |  bit(s) |
+| Type   | bytes   |  bits   |
 |-------:|:-------:|:-------:|
 | float  | 4       | 32      |
 | double | 8       | 64      |
 
 ### Characters
-| Type   | byte(s) |  bit(s) |
+| Type   | bytes   |  bits   |
 |-------:|:-------:|:-------:|
 | char   | 2       | 16      |
 
@@ -148,9 +148,9 @@ Java offers a set of wrapper classes that contains primitives. They add a few ut
 
 Additionally, Java compilers automatically _box_ the generic to the wrapper class, and vice versa (_unbox_).
   
-  For instance, thw following will compile successfully:
-  
-  ```Java
+For instance, thw following will compile successfully:
+ 
+```Java
   class test{
     public static void main(String args[]){
         // Boxing
@@ -165,9 +165,11 @@ Additionally, Java compilers automatically _box_ the generic to the wrapper clas
         c = b - 2;
     }
   }
-  ```
+```
   
-  Santa's elves could use some wrapper classes too! 🎁
+Santa's elves could use some wrapper classes too! 🎁
+
+
 ___
 # Abstract Data Structures
 ## Collections
