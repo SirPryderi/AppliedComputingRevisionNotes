@@ -145,7 +145,7 @@ A stack is an ordered data structure where it is only possible to add an element
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
 ## Sets
-A set is an _Abstract Data Type_ that can store unique value without a particular order. More or less like a set of cars 🂱. They represents the mathematical concept of a set, and as such have the following mathematical operations:
+A set is an _Abstract Data Type_ that can store unique value without a particular order. More or less like a set of cards 🃏. They represents the mathematical concept of a set, and as such have the following mathematical operations:
 
 * **Union** - Joins two Sets.
 
