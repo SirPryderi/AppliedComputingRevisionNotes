@@ -119,7 +119,7 @@ ___
 A collection is an _Abstract Data Type_ that contains elements of the same type. The order in which the elements are returned is not guaranteed to be the same in which the collection was populated.
 
 ## Arrays
-An array is a consecutive chunk of memory containing an **indexed** collection of objects of the same type. Nearly all programming languages offer native support for arrays. Their size is defined at  cannot change dynamically. 
+An array is a contiguous chunk of memory containing a directly **indexed** collection of objects of the same type. The position is memory is calculated multiplying the size of the element by the index and summed with the index of the first element in the array. Nearly all programming languages offer native support for arrays. Their size is defined at cannot change dynamically. On the other hand indexed access is very fast and does not depend on the size of the array. Adding an element mid-way or deleting an element causes the rest of the elements to be shuffled.
 
 ## Lists
 A list is an _Abstract Data Type_ that represents a countable collection of ordered elements of the same type. 
