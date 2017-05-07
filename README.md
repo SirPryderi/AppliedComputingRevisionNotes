@@ -112,8 +112,62 @@ ___
 ### Boolean
 The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), because CPU are optimised for working with integers, but is able to pack an array of booleans to use `1 byte` per element. Smart, innit?
 
+## Generics
+In Java it possible to create classes and method that accepts a **generic type** instead of a specific one. For instance, a _Collection_ is designed to work with every type, so an instance of collection is able to store an arbitrary data type. 
+The following example shows how a generic class is implemented in Java.
+
+```java
+/**
+ * Generic Box class.
+ * @param <T> the type of the value being boxed
+ */
+public class Box<T> {
+    // T stands for "Type"
+    private T t;
+
+    public void set(T t) { this.t = t; }
+    public T get() { return t; }
+}
+```
+
+Note that it is not possible to store primitive data type as a generic, on the other hand you can to use one of the available [wrapper classes](#wrapper-classes).
+
 ## Wrapper Classes
-_coming soon..._
+Java offers a set of wrapper classes that contains primitives. They add a few utility methods as well.
+
+| Primitive |  Wrapper  |
+|:---------:|:---------:|
+| boolean   | Boolean   |
+| char      | Character |
+| byte      | Byte      |
+| short     | Short     |
+| int       | Integer   |
+| long      | Long      |
+| float     | Float     |
+| double    | Double    |
+
+Additionally, Java compilers automatically _box_ the generic to the wrapper class, and vice versa (_unbox_).
+  
+  For instance, thw following will compile successfully:
+  
+  ```Java
+  class test{
+    public static void main(String args[]){
+        // Boxing
+        int a = 42;
+        Integer b = a;
+        
+        b = 40 + 2;
+        
+        // Unboxing
+        int c = b;
+        
+        c = b - 2;
+    }
+  }
+  ```
+  
+  Santa's elves could use some wrapper classes too! 🎁
 ___
 # Abstract Data Structures
 ## Collections
