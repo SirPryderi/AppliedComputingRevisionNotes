@@ -69,7 +69,7 @@ Access modifiers let the developer chose the **scope** of **methods** and **attr
 ## Private
 Methods and attributes marked as _private_ can be seen **only** by implementations of the **same class**. It is useful to prevent uncontrolled access to class-specific methods and attributes. 
 
-## Default / Packaged-Private
+## Default / Package-Private
 Methods and attributes that have no visibility modifiers explicitly declared, are treated as _package-private_, and they are visible only by classes in the **same package**. It can be used to share the access of methods and attributes only to a subsystem placed in a package.
 
 ## Protected
@@ -111,3 +111,46 @@ ___
 
 ### Boolean
 The size of a Boolean is not defined, and is left to the implementation of the _Java Virtual Machine_. After some digging around, it seems that the JVM treats a boolean as an integer (`4 byte`), but is able to pack an array of booleans to use `1 byte` per element. 
+
+
+___
+# Abstract Data Structures
+## Collections
+A collection is an _Abstract Data Type_ that contains elements of the same type. The order in which the elements are returned is not guaranteed to be the same in which the collection was populated.
+
+## Arrays
+An array is a consecutive chunk of memory containing an **indexed** collection of objects of the same type. Nearly all programming languages offer native support for arrays. Their size is defined at  cannot change dynamically. 
+
+## Lists
+A list is an _Abstract Data Type_ that represents a countable collection of ordered elements of the same type. 
+
+### Array Lists
+An Array List is a data structure that is meant to work like a standard _array_, i.e. offering indexed access, but with dynamic allocation, removing the limitation of the fixed size. It offers very good performances when reading and appending, but removing an element or inserting mid-way requires all the other elements to be shuffled.
+ 
+### Linked Lists
+A linked list is an ordered data structure that has **no indexed access**, but every node has a reference to the next element. Reaching a given element in the linked linked requires to traverse the whole structure until that point, but removing and or adding an element is very quick, because only one pointer manipulation is required.
+
+![Linked List](https://upload.wikimedia.org/wikipedia/commons/3/37/Singly_linked_list.png)
+
+
+## Queues
+A queue is an ordered data structure where it is only possible to add an element at the bottom of the structure (_**enqueue**_) and remove one from the top (_**dequeue**_). This makes the Queue a _**First-In-First-Out**_ (_**FIFO**_). Often a _peek_ operation is added to check the element on top without removing it.
+
+![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
+
+## Stacks
+A stack is an ordered data structure where it is only possible to add an element at the top of the structure (_**push**_) and removing one fro the top of the stack (_**pop**_). This makes the Stack a _**First-In-Last-Out**_ (_**FILO**_). Often a _peek_ operation is added to check the element on top without removing it.
+
+![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
+
+## Sets
+A set is an _Abstract Data Type_ that can store unique value without a particular order. They represents the mathematical concept of a set, and as such have the following mathematical operations:
+
+* **Union** - Joins two Sets.
+
+![Union](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Venn0111.svg/330px-Venn0111.svg.png)
+* **Intersection** - Returns the elements that are present in both Sets.
+
+![Intersection](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn0001.svg/330px-Venn0001.svg.png)
+* **Difference** - Returns the elements in B that are not in A.
+* **Subset** - A predicate that tests whether all the elements in A are in B.
