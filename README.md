@@ -301,13 +301,26 @@ As you can see, very similar strings have totally different hashes and that all 
 Small note: md5 is not cryptographically secure. Do not use it for storing passwords or other sensitive information. Seriously, don't. Don't come cryin' to me if you do.
 
 # Search
+The strategy to find an element in a data set depends on whether the collection is **sorted** or not. If the collection is not sorted, the **linear search** is the only option.
+If the data is sorted, __linear search__ is still viable, but **binary search** is way more efficient. 
+
 ## Linear Search
+Linear search is an algorithm to find an element in a set, iterating throughout all the elements until the wanted element is found.
+![linear-search](https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif)
+
 ## Binary Search
+Binary search is an optimised search algorithm for sorted data. It starts the process at the middle of the set, and then splits the set in half guessing in what half the value would be, and repeats the process till the element is found (or not).
+Binary search is extremely efficient to work with **[binary search tree](#binary-search-trees)**, where the middle point is be the **root** of tree, making it one of the most search-efficient data structure, reason why it is at the core of most database systems.
+ 
+The classical example for binary search is looking for a name in the phone-book. You can either start looking from the first page until you find it, in that case you would using _linear search_ (and you probably are the village idiot), or you can open the book at the middle, and assuming you know the alphabet, evaluate whether the name is in the right or in the left side. Then split the block again in half and chose the right or the left and so on until you find the right page. It's indeed a shame nobody is using actual phone-books anymore, and this example will soon be meaningless.
+
+![binary-search-vs-linear-search](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
 # Sorting
 ## Bubble Sort
 ## Insertion Sort
 ## Selection Sort
+## Shell Sort
 ## Merge Sort
 
 # Memory Allocation
