@@ -42,6 +42,8 @@ A set of notes on the topics that are going to be present on the exam.
   * [Trees](#trees)
     * [Binary Search Trees](#binary-search-trees)
   * [Maps](#maps)
+    * [Hash Maps](#hash-maps)
+    * [Hash Function](#hash-function)
 * [Search](#search)
   * [Linear Search](#linear-search)
   * [Binary Search](#binary-search)
@@ -279,6 +281,24 @@ A _Binary Search Tree_ (BST) is a specific tree structure used to store sorted d
 A BST might not be **balanced**, i.e. having most of the values on one side, and that degenerates the search performances down to linear search (a [linked list](#linked-lists) can be thought as a degenerated tree). For such reason it's important to **rebalance** the BST to maximise the benefits. A _**Red-black tree**_, not only comes very handy for Christmas, but also self-balances itself when a new item is added to keep search always efficient. The _red-black_ tree is not the only kind of self-balancing binary tree, but it's the only with a fancy name easy to remember.
 
 ## Maps
+A map, also known as _associative array_, _symbol table_ or _dictionary_, is an _Abstract Data Type_ composed of a collection of (key, values) pairs. Instead of using a numeric index, like an array, you can access the value using a key of generic type.
+
+### Hash Maps
+An Hash Map is an implementation of a Map that uses an **hash algorithm** to convert the key into a numerical index to be used in an array, that will ultimately store the data. Each element of the array contains a an array of _buckets_, because the hash function may produce _collisions_.
+
+![hash map](https://upload.wikimedia.org/wikipedia/commons/5/58/Hash_table_4_1_1_0_0_1_0_LL.svg)
+
+### Hash Function
+An hash function is a function capable of converting data of arbitrary size to a data of fixed size. One of the most famous hashing function is md5. These are some examples of strings and their md5 hash.
+
+    Hello World     b10a8db164e0754105b7a99be72e3fe5
+    Hello World!    ed076287532e86365e841e92bfc50d8c 
+    Hillu Wirld!    ab14b509ca8337b71a17e5d8a41b92da 
+    42              a1d0c6e83f027327d8461063f4ac58a6
+    
+As you can see, very similar strings have totally different hashes and that all the hashes have the same length, regardless of the original string.
+
+Small note: md5 is not cryptographically secure. Do not use it for storing passwords or other sensitive information. Seriously, don't. Don't come cryin' to me if you do.
 
 # Search
 ## Linear Search
