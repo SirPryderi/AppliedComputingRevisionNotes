@@ -395,11 +395,13 @@ The merge sort if very efficient, but takes a lot of memory, because it needs to
 ![merge-sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 # Memory Allocation
-* Dynamic
-* Automatic
-* Static
+* **Static** - Static allocation prepares the memory for your variables when the program starts. The size is **fixed** when the program is created. It applies to global variables, file scope variables, and variables qualified with static defined inside functions.
+* **Automatic** - Automatic allocation occurs for (_non-static_) variables defined inside functions, and is usually stored on the _**stack**_. You do not have to reserve extra memory using them, but on the other hand, have also limited control over the lifetime of this memory. E.g: automatic variables in a function are only there until the function finishes.
+* **Dynamic** - These variables are dynamically stored in the _**heap**_. You control the exact size and the lifetime of these memory locations, in languages without _garbage collection_ (like C), and if you don't free it, you'll run into _memory leaks_, which may cause your application to crash, since at some point, it cannot allocate more memory. In Java you need to be careful not to leave any references that could interfere with the _garbage collection_, making it assume that you are still using them, and causing more _memory leaks_. Basically, you'll always create memory leaks. That's what stack overflow is for.
 
-# Encoding
+# Characters Encoding
+In computer science, there are two main ways of encoding a binary digit into an visual character: **ASCII** and **Unicode**. 
+
 * ASCII
 * UNICODE
 
