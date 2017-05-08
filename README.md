@@ -1,6 +1,8 @@
 # Applied Computing Revision Notes
 A set of notes on the topics that are going to be present on the exam.
 
+**WARNING**: May contain **humor**, **profanities** and **palm oil**. For allergens see ingredients in **bold**.  
+
 # Table of Contents
 <!-- TOC start -->
 * [Diagrams](#diagrams)
@@ -300,6 +302,8 @@ As you can see, very similar strings have totally different hashes and that all 
 
 Small note: md5 is not cryptographically secure. Do not use it for storing passwords or other sensitive information. Seriously, don't. Don't come cryin' to me if you do.
 
+
+___
 # Search
 The strategy to find an element in a data set depends on whether the collection is **sorted** or not. If the collection is not sorted, the **linear search** is the only option.
 If the data is sorted, __linear search__ is still viable, but **binary search** is way more efficient. 
@@ -316,12 +320,69 @@ The classical example for binary search is looking for a name in the phone-book.
 
 ![binary-search-vs-linear-search](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
+
+___
 # Sorting
+As discussed when talking about [search](#search), having a sorted set of values, can dramatically improve **search performances**. Finding the most efficient sorting algorithm is still an open field in computing, mainly because different algorithm performs differently with **sorted**, **almost-sorted**, **reverse-sorted**, **duplicate** and **random** data, and because of the accidental deaths caused by alcohol-driven arguments between computer scientists. Some algorithms (notably the [merge sort](#merge-sort)) are **stable**, i.e. elements with the same key retain the same relative order, while others (most) are **unstable**.
+
+Consider this list of words that needs to be sorted _lexicographically_ (read _alphabetically_ if you don't know what lexo-thing means) based on their first letter.
+
+    peach
+    straw
+    apple
+    spork
+    
+This would be a stable sorting (note `straw` **before** `spork`):
+
+    apple
+    peach
+    straw
+    spork
+    
+... while this would not: (note `straw` **after** `spork`)
+
+    apple
+    peach
+    spork
+    straw
+    
+Both cases are sorted according to the their first letter, in the stable sorting the relative order between elements with the same letter is retained. I still don't know why you'd want that so desperately, but who am I to disagree? I travel the world an the seven seas. Sorting dreams are made of this... ♫ 
+
 ## Bubble Sort
+Accounted among one the worse banes of humanity sent by the flying-spaghetti-monster, the _bubble sort_ is a very inefficient sorting algorithm that sorts two adjacent elements of the set at a time (_bubble_) until there are no more bubble swaps. Despite being very inefficient, is quicker than other more sophisticated algorithm when sorting almost-ordered sets. Now, do humanity a favor, and forget it exists, thank you.
+
+![bubble-sort](https://upload.wikimedia.org/wikipedia/commons/5/54/Sorting_bubblesort_anim.gif)
+
 ## Insertion Sort
+Insertion sort is a sorting algorithm that sorts a collection placing (_inserting_) the value in its final position. It involves a lot swaps in the array, because it's constantly pushing most of the elements to insert the current one in the correct position. It is similar to the way most of people sort playing cards in their hand, pick every card from left to right, and place it where it should be.
+
+![insertion-sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
 ## Selection Sort
+Selection sort is an in-place sorting algorithm that divides the array in two portion, a part already sorted and one still to sort.
+The algorithm finds the smallest number (hence _selection_) in the array and places it a the beginning, then shrinks the array by one (because the leftmost first value is already sorted) and does the same on smaller portion recursively until the section to sort is just one element. It reduces the number of swaps, it is easy to implement, but in general is not a very efficient sorting algorithm.  
+
+![selection-sort](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+
 ## Shell Sort
+Shell sort seems to be a very stupid idea. With that in mind, the Shell sort is a sorting algorithm that claims to be an improvement of the [bubble sort](#bubble-sort), that instead of comparing adjacent elements it compare element at a given gap and swaps them, then reducing the size of the gap, till it converges to a normal [bubble-sort](#bubble-sort) (`gap = 1`). It seems to have decent performances on semi-sorted data.
+
+![shell-sort](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
+
+## Quick Sort
+Quick sort is an optimised general-purpose sorting algorithm. It works in 3 steps:
+  1. It chooses an element called _pivot_.
+  2. Reorders the array so that all the elements smaller than the pivot are on one side (_partition_).
+  3. Recursively applies the steps above in the two partitions.
+
+When efficiently implemented it is one of the fastest sorting algorithm.
+
+![Quick-Sort](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
 ## Merge Sort
+Merge sort is a sorting algorithm that splits the collection into sub-lists containing just on element, then merging the sub-lists, and then recursively merge the sorted sub-lists until there is only one sorted list. The merge sort if very efficient, but takes a lot of memory, because it needs to create a lot of sub-lists. On the other hand, it is very easy to parallelize, hence it makes full use of modern computer's multithreading capabilities.  
+    
+![merge-sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 # Memory Allocation
 * Dynamic
