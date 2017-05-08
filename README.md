@@ -3,7 +3,6 @@ A set of notes on the topics that are going to be present on the exam.
 
 # Table of Contents
 <!-- TOC start -->
-* [Applied Computing Revision Notes](#applied-computing-revision-notes)
 * [Diagrams](#diagrams)
   * [Class Diagram](#class-diagram)
   * [Use Case](#use-case)
@@ -41,8 +40,11 @@ A set of notes on the topics that are going to be present on the exam.
   * [Stacks](#stacks)
   * [Sets](#sets)
   * [Trees](#trees)
+    * [Binary Search Trees](#binary-search-trees)
   * [Maps](#maps)
 * [Search](#search)
+  * [Linear Search](#linear-search)
+  * [Binary Search](#binary-search)
 * [Sorting](#sorting)
   * [Bubble Sort](#bubble-sort)
   * [Insertion Sort](#insertion-sort)
@@ -265,10 +267,22 @@ A set is an _Abstract Data Type_ that can store unique value without a particula
 * **Subset** - A predicate that tests whether all the elements in A are in B.
 
 ## Trees
+A tree is an _Abstract Data Type_ somewhat similar to a linked list, but has more than one _node_ element and they are called _children_. The starting element is called _root_. A node with no children is called _leaf_. Not sure whether we're talking about computer science or botany. Each node can have just one parent. 
+
+![tree](https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_tree.svg)
+
+They are particularly useful for storing hierarchic structures.
+
+### Binary Search Trees
+A _Binary Search Tree_ (BST) is a specific tree structure used to store sorted data. The node to the **left** contains a **smaller** value than the current node, and the one on the **right** a **bigger** one. For such reason BST can only contain *comparable* values, and no duplicates. They are very efficient in searching, because they are designed to work well with the [binary search](binary-search).
+
+A BST might not be **balanced**, i.e. having most of the values on one side, and that degenerates the search performances down to linear search (a [linked list](#linked-lists) can be thought as a degenerated tree). For such reason it's important to **rebalance** the BST to maximise the benefits. A _**Red-black tree**_, not only comes very handy for Christmas, but also self-balances itself when a new item is added to keep search always efficient. The _red-black_ tree is not the only kind of self-balancing binary tree, but it's the only with a fancy name easy to remember.
 
 ## Maps
 
 # Search
+## Linear Search
+## Binary Search
 
 # Sorting
 ## Bubble Sort
