@@ -57,7 +57,9 @@ A set of notes on the topics that are going to be present on the exam.
   * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
 * [Memory Allocation](#memory-allocation)
-* [Encoding](#encoding)
+* [Characters Encoding](#characters-encoding)
+  * [ASCII](#ascii)
+  * [Unicode](#unicode)
 * [Compression](#compression)
 * [Lifecycle Models](#lifecycle-models)
 <!-- TOC end -->
@@ -402,13 +404,26 @@ The merge sort if very efficient, but takes a lot of memory, because it needs to
 # Characters Encoding
 In computer science, there are two main ways of encoding a binary digit into an visual character: **ASCII** and **Unicode**. 
 
-* ASCII
-* UNICODE
+## ASCII
+The **ASCII** abbreviation for _American Standard Code for Information Interchange is a character encoding standard, defined in 1963 (!) by the ANSI (_American National Standards Institute_). Is anybody sensing an elevate rate of America patriotism, or is it just me? Anyways, it uses `7 bits` than it can encode `128` characters:
+
+* Digits from 0 to 9
+* Lowercase and uppercase Latin letters
+* Basic punctuation symbols
+* A space
+* Various non-printable characters and control symbols
+
+Despite being still very widespread, this encoding is slowly being abandoned for the lack characters used in other languages. 
+
+## Unicode
+_Coming soon..._
 
 # Compression
+_Coming soon..._
 * Lossy vs Lossless
 * Image
 * Audio
 * Video
 
 # Lifecycle Models
+_Coming soon..._
