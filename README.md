@@ -53,6 +53,8 @@ A set of notes on the topics that are going to be present on the exam.
   * [Bubble Sort](#bubble-sort)
   * [Insertion Sort](#insertion-sort)
   * [Selection Sort](#selection-sort)
+  * [Shell Sort](#shell-sort)
+  * [Quick Sort](#quick-sort)
   * [Merge Sort](#merge-sort)
 * [Memory Allocation](#memory-allocation)
 * [Encoding](#encoding)
@@ -310,6 +312,7 @@ If the data is sorted, __linear search__ is still viable, but **binary search** 
 
 ## Linear Search
 Linear search is an algorithm to find an element in a set, iterating throughout all the elements until the wanted element is found.
+
 ![linear-search](https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif)
 
 ## Binary Search
@@ -359,28 +362,35 @@ Insertion sort is a sorting algorithm that sorts a collection placing (_insertin
 ![insertion-sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
 ## Selection Sort
-Selection sort is an in-place sorting algorithm that divides the array in two portion, a part already sorted and one still to sort.
+Selection sort is an _in-place_ sorting algorithm that divides the array in two portion, a part already sorted and one still to sort.
 The algorithm finds the smallest number (hence _selection_) in the array and places it a the beginning, then shrinks the array by one (because the leftmost first value is already sorted) and does the same on smaller portion recursively until the section to sort is just one element. It reduces the number of swaps, it is easy to implement, but in general is not a very efficient sorting algorithm.  
 
 ![selection-sort](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
 
 ## Shell Sort
-Shell sort seems to be a very stupid idea. With that in mind, the Shell sort is a sorting algorithm that claims to be an improvement of the [bubble sort](#bubble-sort), that instead of comparing adjacent elements it compare element at a given gap and swaps them, then reducing the size of the gap, till it converges to a normal [bubble-sort](#bubble-sort) (`gap = 1`). It seems to have decent performances on semi-sorted data.
+Shell sort seems to be a very stupid idea. With that in mind, the Shell sort is a sorting algorithm that claims to be an improvement of the [bubble sort](#bubble-sort), that instead of comparing adjacent elements it compare element at a given _gap_ and swaps them, then reducing the size of the _gap_, till it converges to a normal [bubble-sort](#bubble-sort) (`gap = 1`). It seems to have decent performances on semi-sorted data.
 
 ![shell-sort](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
 
 ## Quick Sort
 Quick sort is an optimised general-purpose sorting algorithm. It works in 3 steps:
-  1. It chooses an element called _pivot_.
-  2. Reorders the array so that all the elements smaller than the pivot are on one side (_partition_).
-  3. Recursively applies the steps above in the two partitions.
+
+1. It chooses an element called _pivot_.
+2. Reorders the array so that all the elements smaller than the pivot are on one side (_partition_).
+3. Recursively applies the steps above in the two partitions.
 
 When efficiently implemented it is one of the fastest sorting algorithm.
 
 ![Quick-Sort](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
 
 ## Merge Sort
-Merge sort is a sorting algorithm that splits the collection into sub-lists containing just on element, then merging the sub-lists, and then recursively merge the sorted sub-lists until there is only one sorted list. The merge sort if very efficient, but takes a lot of memory, because it needs to create a lot of sub-lists. On the other hand, it is very easy to parallelize, hence it makes full use of modern computer's multithreading capabilities.  
+Merge sort is a sorting algorithm that:
+ 
+1. Splits the collection into sub-lists containing just one element;
+2. Merges the sub-lists in order;
+3. Recursively merges the sorted sub-lists until there is only one sorted list. 
+
+The merge sort if very efficient, but takes a lot of memory, because it needs to create a lot of sub-lists. On the other hand, it is very easy to parallelize, hence it makes full use of modern computer's multithreading capabilities.  
     
 ![merge-sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
