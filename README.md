@@ -1,6 +1,58 @@
 # Applied Computing Revision Notes
 A set of notes on the topics that are going to be present on the exam.
 
+# Table of Contents
+<!-- TOC start -->
+* [Applied Computing Revision Notes](#applied-computing-revision-notes)
+* [Diagrams](#diagrams)
+  * [Class Diagram](#class-diagram)
+  * [Use Case](#use-case)
+  * [Sequence Diagram](#sequence-diagram)
+  * [Activity Diagram](#activity-diagram)
+* [Objected Oriented Concepts](#objected-oriented-concepts)
+* [Relationships Between Objects](#relationships-between-objects)
+  * [Implementation](#implementation)
+  * [Inheritance](#inheritance)
+  * [Dependency](#dependency)
+  * [Association](#association)
+  * [Aggregation](#aggregation)
+  * [Composition](#composition)
+* [Access Modifiers](#access-modifiers)
+  * [Private](#private)
+  * [Default / Package-Private](#default-/-package-private)
+  * [Protected](#protected)
+  * [Public](#public)
+* [Data Types](#data-types)
+  * [Primitive vs Compound types](#primitive-vs-compound-types)
+  * [Primitive types (Java)](#primitive-types-(java))
+    * [Integers](#integers)
+    * [Floating Points](#floating-points)
+    * [Characters](#characters)
+    * [Boolean](#boolean)
+  * [Generics](#generics)
+  * [Wrapper Classes](#wrapper-classes)
+* [Abstract Data Structures](#abstract-data-structures)
+  * [Collections](#collections)
+  * [Arrays](#arrays)
+  * [Lists](#lists)
+    * [Array Lists](#array-lists)
+    * [Linked Lists](#linked-lists)
+  * [Queues](#queues)
+  * [Stacks](#stacks)
+  * [Sets](#sets)
+  * [Trees](#trees)
+  * [Maps](#maps)
+* [Search](#search)
+* [Sorting](#sorting)
+  * [Bubble Sort](#bubble-sort)
+  * [Insertion Sort](#insertion-sort)
+  * [Selection Sort](#selection-sort)
+  * [Merge Sort](#merge-sort)
+* [Memory Allocation](#memory-allocation)
+* [Encoding](#encoding)
+* [Compression](#compression)
+* [Lifecycle Models](#lifecycle-models)
+<!-- TOC end -->
 
 ___
 # Diagrams
@@ -201,7 +253,7 @@ A stack is an ordered data structure where it is only possible to add an element
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
 ## Sets
-A set is an _Abstract Data Type_ that can store unique value without a particular order. More or less like a set of cards 🃏. They represents the mathematical concept of a set, and as such have the following mathematical operations:
+A set is an _Abstract Data Type_ that can store unique value without a particular order. More or less like a set of cards 🃏. They represent the mathematical concept of a set, and as such have the following mathematical operations:
 
 * **Union** - Joins two Sets.
 
