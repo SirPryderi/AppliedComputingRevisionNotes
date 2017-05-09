@@ -423,7 +423,7 @@ Despite being still very widespread, this encoding is slowly being abandoned for
 
 ## Unicode
 Unicode is a character encoding standard, dated to 1987, that aims to encode all the languages scripts in the world. Now that they are pretty much done with that, even the historical ones, they just keep on adding new useless emojis. 🛴 
-The Unicode itself does not specify how many bytes it needs, although its current range can fit in `4 bytes`, and it's left to the implementation specifications. In all Unicode implementations, the first `128` characters are the [ASCII](#ascii) characters for retrocompatiblity reasons.
+The Unicode itself does not specify how many bytes it needs, although its current range can fit in `4 bytes`, and it's left to the implementation specifications. In all Unicode implementations, the first `128` characters are the [ASCII](#ascii) characters for retro-compatibility reasons.
 
 The most common Unicode encoding is `UTF-8`, that uses just `1 byte` (`8 bits`, hence UTF-**8**) for characters in the range of ASCII, and is so widespread because it has the same size of a plain ol' ASCII character. It can expand up to `4 bytes` in succession, to handle Asian characters and emojis. Keep that in mind next time you'll use an emoji. `UTF-8` is the standard encoding for the _World Wide Web_, and is used for HTML/XML, emails, communication protocols and so on.
 
@@ -447,4 +447,37 @@ _Coming soon..._
 
 ___
 # Lifecycle Models
-_Coming soon..._
+## Agile Methodologies
+The key feature of the Agile Methodologies is that they bring the development early on in the process, to create evolutionary prototype, that help fixing the requirements with the client, through cooperative planning. For such reason it is an **iterative** and incremental** process.
+
+## Unified Process
+The _Unified Process_ is an **iterative** and **incremental** systems development life cycle based on **Agile**, with an high focus on the project risks.
+All artifacts of the Unified Process are **optional** and it can be tailored for the project. The most important artifact in the Unified Process are the **Use Case Diagram**, making them the central point of the development process.
+
+There are four iterative phases in the Unified Process:
+
+1. Inception
+    * **Feasibility** evaluation
+    * **Risks** assessment
+    * Top-level **use case diagram**
+    * Shortest phase
+2. Elaboration
+    * Full **use cases driagram**
+    * Design **core features**
+    * Creation of:
+        * Domain Model
+        * Design Model
+        * Data Model
+        * UI Prototypes
+3. Construction
+    * **Coding**
+    * One **release** per iteration
+    * Longest phase
+4. Transition
+    * **Deployment**
+    * Client **feedback**
+    * User **training**
+
+These phases are **repeated** for each iteration until the release of the full version.
+
+On the contrary, _sequential development_ goes through one phase only once during the whole life cycle of the system.
