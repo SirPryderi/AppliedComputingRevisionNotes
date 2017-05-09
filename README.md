@@ -319,7 +319,7 @@ Linear search is an algorithm to find an element in a set, iterating throughout 
 
 ## Binary Search
 Binary search is an optimised search algorithm for sorted data. It starts the process at the middle of the set, and then splits the set in half guessing in what half the value would be, and repeats the process till the element is found (or not).
-Binary search is extremely efficient to work with **[binary search tree](#binary-search-trees)**, where the middle point is be the **root** of tree, making it one of the most search-efficient data structure, reason why it is at the core of most database systems.
+Binary search is extremely efficient to work with **[binary search tree](#binary-search-trees)**, where the middle point is be the **root** of the tree, making it one of the most search-efficient data structure, reason why it is at the core of most database systems.
  
 The classical example for binary search is looking for a name in the phone-book. You can either start looking from the first page until you find it, in that case you would using _linear search_ (and you probably are the village idiot), or you can open the book at the middle, and assuming you know the alphabet, evaluate whether the name is in the right or in the left side. Then split the block again in half and chose the right or the left and so on until you find the right page. It's indeed a shame nobody is using actual phone-books anymore, and this example will soon be meaningless.
 
@@ -405,7 +405,7 @@ The merge sort if very efficient, but takes a lot of memory, because it needs to
 In computer science, there are two main ways of encoding a binary digit into an visual character: **ASCII** and **Unicode**. 
 
 ## ASCII
-The **ASCII** abbreviation for _American Standard Code for Information Interchange is a character encoding standard, defined in 1963 (!) by the ANSI (_American National Standards Institute_). Is anybody sensing an elevate rate of America patriotism, or is it just me? Anyways, it uses `7 bits` than it can encode `128` characters:
+The **ASCII**, abbreviation for _American Standard Code for Information Interchange_, is a character encoding standard, defined in 1963 (!) by the ANSI (_American National Standards Institute_). Is anybody sensing an elevate rate of America patriotism here, or is it just me? Anyways, it uses `7 bits` than it can encode `128` characters:
 
 * Digits from 0 to 9
 * Lowercase and uppercase Latin letters
