@@ -87,7 +87,9 @@ The activity diagram is a **UML** tool to describe the logic flow between **acti
 ___
 # Objected Oriented Concepts
 
-**RTFG**! Read the fucking glossary: [http://asch.org.uk/programming/oop/glossary.html](http://asch.org.uk/programming/oop/glossary.html)
+**RTFG**! Read the fucking glossary: <http://asch.org.uk/programming/oop/glossary.html>.
+
+And while you're there happily clicking links, you can have a read at this too: <http://datastruct.hnd-computing.info>. 
 
 
 ___
@@ -396,11 +398,15 @@ The merge sort if very efficient, but takes a lot of memory, because it needs to
     
 ![merge-sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
+
+___
 # Memory Allocation
 * **Static** - Static allocation prepares the memory for your variables when the program starts. The size is **fixed** when the program is created. It applies to global variables, file scope variables, and variables qualified with static defined inside functions.
 * **Automatic** - Automatic allocation occurs for (_non-static_) variables defined inside functions, and is usually stored on the _**stack**_. You do not have to reserve extra memory using them, but on the other hand, have also limited control over the lifetime of this memory. E.g: automatic variables in a function are only there until the function finishes.
 * **Dynamic** - These variables are dynamically stored in the _**heap**_. You control the exact size and the lifetime of these memory locations, in languages without _garbage collection_ (like C), and if you don't free it, you'll run into _memory leaks_, which may cause your application to crash, since at some point, it cannot allocate more memory. In Java you need to be careful not to leave any references that could interfere with the _garbage collection_, making it assume that you are still using them, and causing more _memory leaks_. Basically, you'll always create memory leaks. That's what stack overflow is for.
 
+
+___
 # Characters Encoding
 In computer science, there are two main ways of encoding a binary digit into an visual character: **ASCII** and **Unicode**. 
 
@@ -417,7 +423,7 @@ Despite being still very widespread, this encoding is slowly being abandoned for
 
 ## Unicode
 Unicode is a character encoding standard, dated to 1987, that aims to encode all the languages scripts in the world. Now that they are pretty much done with that, even the historical ones, they just keep on adding new useless emojis. 🛴 
-The Unicode itself does not specify how many bytes it needs, although its current range can fit in `4 bytes`, and it's left to the implementation specifications. In all Unicode implementations, the first `128` characters are the [ASCII](#ASCII) characters for retrocompatiblity reasons.
+The Unicode itself does not specify how many bytes it needs, although its current range can fit in `4 bytes`, and it's left to the implementation specifications. In all Unicode implementations, the first `128` characters are the [ASCII](#ascii) characters for retrocompatiblity reasons.
 
 The most common Unicode encoding is `UTF-8`, that uses just `1 byte` (`8 bits`, hence UTF-**8**) for characters in the range of ASCII, and is so widespread because it has the same size of a plain ol' ASCII character. It can expand up to `4 bytes` in succession, to handle Asian characters and emojis. Keep that in mind next time you'll use an emoji. `UTF-8` is the standard encoding for the _World Wide Web_, and is used for HTML/XML, emails, communication protocols and so on.
 
@@ -429,6 +435,8 @@ It's important to note that all the encodings above support the whole range (exp
 
 At the time of writing, the Unicode v9.0 contains `128,237` characters. 
 
+
+___
 # Compression
 _Coming soon..._
 * Lossy vs Lossless
@@ -436,5 +444,7 @@ _Coming soon..._
 * Audio
 * Video
 
+
+___
 # Lifecycle Models
 _Coming soon..._
