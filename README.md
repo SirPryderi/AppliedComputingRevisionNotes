@@ -416,7 +416,18 @@ The **ASCII**, abbreviation for _American Standard Code for Information Intercha
 Despite being still very widespread, this encoding is slowly being abandoned for the lack characters used in other languages. 
 
 ## Unicode
-_Coming soon..._
+Unicode is a character encoding standard, dated to 1987, that aims to encode all the languages scripts in the world. Now that they are pretty much done with that, even the historical ones, they just keep on adding new useless emojis. 🛴 
+The Unicode itself does not specify how many bytes it needs, although its current range can fit in `4 bytes`, and it's left to the implementation specifications. In all Unicode implementations, the first 128 characters are the [ASCII](#ASCII) characters for retrocompatiblity reasons.
+
+The most common Unicode encoding is `UTF-8`, that uses just `1 byte` (`8 bits`, hence UTF-**8**) for characters in the range of ASCII, and is so widespread because it has the same size of a plain ol' ASCII character. It can expand up to `4 bytes` in succession, to handle Asian characters and emojis. Keep that in mind next time you'll use an emoji. `UTF-8` is the standard encoding for the _World Wide Web_, and is used for HTML/XML, emails, communication protocols and so on.
+
+Java internally uses `UTF-16`, a `2 bytes` encoding of the Unicode standard. `UTF-16` can expand itself to have other `2 bytes` in succession to represents all the other less-used characters in the Unicode range.
+
+There is also a `UTF-32` encoding, that uses `4 bytes`, and differently from the other versions, it's a fixed length encoding. The main disadvantage is that it takes 4 times more space than `UTF-8` with no difference in encoded range.
+
+It's important to note that all the encodings above support the whole range (expanding when necessary), the only difference is in their minimum size.
+
+At the time of writing, the Unicode v9.0 contains `128,237` characters. 
 
 # Compression
 _Coming soon..._
